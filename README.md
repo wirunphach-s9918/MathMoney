@@ -92,8 +92,7 @@
   <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
  <script src="/_sdk/telemetry_sdk.js"></script></head>
  <body class="h-full m-0 p-0 overflow-auto">
-  <div id="app-container" class="min-h-full w-full relative" style="background: linear-gradient(135deg, #FFB6D9 0%, #FFC0E0 25%, #FFD9EF 50%, #FFE6F5 75%, #FFF0FA 100%);">
-   <!-- Floating clouds -->
+  <div id="app-container" class="min-h-full w-full relative" style="background: linear-gradient(135deg, #FFB6D9 0%, #FFC0E0 25%, #FFD9EF 50%, #FFE6F5 75%, #FFF0FA 100%);"><!-- Floating clouds -->
    <div class="cloud cloud-drift cloud1" style="width: 100px; height: 50px; top: 5%; left: 10%;"></div>
    <div class="cloud cloud-drift cloud2" style="width: 80px; height: 40px; top: 20%; right: 15%;"></div>
    <div class="cloud cloud-drift cloud3" style="width: 120px; height: 60px; top: 40%; left: 5%;"></div>
@@ -111,13 +110,11 @@
     ✨
    </div><!-- Header -->
    <header class="text-center py-6 px-4">
-    <div class="flex justify-center items-center gap-3 mb-2">
-     <span class="text-4xl coin-bounce">💰</span>
+    <div class="flex justify-center items-center gap-3 mb-2"><span class="text-4xl coin-bounce">💰</span>
      <h1 id="main-title" class="text-3xl md:text-4xl font-bold text-white drop-shadow-lg" style="text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);">คณิตศาสตร์การเงิน ป.5</h1><span class="text-4xl coin-bounce" style="animation-delay: 0.5s;">🪙</span>
     </div>
     <p id="welcome-text" class="text-lg text-white/90 mb-3">เรียนรู้เรื่องเงินอย่างสนุกสนาน!</p>
-    <div id="teacher-section" class="inline-flex items-center gap-2 bg-white/30 backdrop-blur-sm rounded-full px-4 py-2">
-     <span class="text-2xl">👩‍🏫</span>
+    <div id="teacher-section" class="inline-flex items-center gap-2 bg-white/30 backdrop-blur-sm rounded-full px-4 py-2"><span class="text-2xl">👩‍🏫</span>
      <p id="teacher-name" class="text-white font-semibold">ครูวิรัลพัชษ์ สว่างเดือน</p>
     </div>
    </header><!-- Score Display -->
@@ -147,14 +144,12 @@
      </div>
     </div>
    </div><!-- Main Game Area -->
-   <main class="px-4 pb-8">
-    <!-- Topic Selection -->
+   <main class="px-4 pb-8"><!-- Topic Selection -->
     <div id="topic-selection" class="max-w-2xl mx-auto">
      <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8">
       <h2 class="text-2xl font-bold text-center mb-2" style="color: #FF1493;">🎨 เลือกหัวข้อที่ต้องการฝึก</h2>
       <p class="text-center text-gray-500 mb-6 text-sm">เลือกเรื่องที่อยากฝึก แล้วเริ่มเล่น!</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <button onclick="startGame('counting')" class="group relative overflow-hidden rounded-2xl p-6 text-left transition-all hover:scale-105 hover:shadow-xl" style="background: linear-gradient(135deg, #FFB6C1 0%, #FFB0D1 100%); border: 2px solid #FF69B4;">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4"><button onclick="startGame('counting')" class="group relative overflow-hidden rounded-2xl p-6 text-left transition-all hover:scale-105 hover:shadow-xl" style="background: linear-gradient(135deg, #FFB6C1 0%, #FFB0D1 100%); border: 2px solid #FF69B4;">
         <div class="text-4xl mb-3 group-hover:scale-125 transition-transform">
          🧮
         </div><h3 class="text-xl font-bold text-white">นับเงิน</h3><p class="text-white/90 text-sm">ฝึกนับเหรียญและธนบัตร</p>
@@ -183,16 +178,14 @@
      </div>
     </div><!-- Question Area -->
     <div id="question-area" class="max-w-2xl mx-auto hidden">
-     <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 slide-up">
-      <!-- Money Display -->
+     <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-8 slide-up"><!-- Money Display -->
       <div id="money-display" class="flex flex-wrap justify-center gap-3 mb-6 min-h-[80px]"></div><!-- Question -->
       <div id="question-box" class="bg-gradient-to-r from-pink-100 to-rose-100 rounded-2xl p-6 mb-6 border-2 border-pink-200">
        <p id="question-text" class="text-xl text-center text-gray-800 font-medium"></p>
       </div><!-- Answer Options -->
       <div id="answer-options" class="grid grid-cols-2 gap-4 mb-6"></div><!-- Input Answer -->
       <div id="input-answer" class="hidden mb-6">
-       <div class="flex gap-3 justify-center items-center">
-        <input type="number" id="answer-input" class="w-40 px-4 py-3 text-2xl text-center border-3 rounded-xl focus:outline-none focus:ring-4" style="border-color: #FF69B4; background: #FFF0FA;" placeholder="?"> <span class="text-xl text-gray-600 font-medium">บาท</span>
+       <div class="flex gap-3 justify-center items-center"><input type="number" id="answer-input" class="w-40 px-4 py-3 text-2xl text-center border-3 rounded-xl focus:outline-none focus:ring-4" style="border-color: #FF69B4; background: #FFF0FA;" placeholder="?"> <span class="text-xl text-gray-600 font-medium">บาท</span>
        </div><button onclick="checkInputAnswer()" class="mt-4 w-full text-white py-3 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity" style="background: linear-gradient(135deg, #FF1493 0%, #FF69B4 100%);">ตรวจคำตอบ</button>
       </div><!-- Feedback -->
       <div id="feedback" class="hidden text-center py-4 rounded-2xl mb-4">
@@ -213,8 +206,7 @@
       <div id="achievement" class="rounded-2xl p-4 mb-6 border-2 border-pink-200" style="background: linear-gradient(135deg, #FFE6F5 0%, #FFD9EF 100%);">
        <p id="achievement-text" class="text-lg font-medium" style="color: #FF1493;"></p>
       </div>
-      <div class="flex gap-4">
-       <button onclick="restartGame()" class="flex-1 text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity" style="background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);"> 🔄 เล่นอีกครั้ง </button> <button onclick="goToMenu()" class="flex-1 text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity" style="background: linear-gradient(135deg, #DDA0DD 0%, #DA70D6 100%);"> 📋 เลือกหัวข้อใหม่ </button>
+      <div class="flex gap-4"><button onclick="restartGame()" class="flex-1 text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity" style="background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);"> 🔄 เล่นอีกครั้ง </button> <button onclick="goToMenu()" class="flex-1 text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity" style="background: linear-gradient(135deg, #DDA0DD 0%, #DA70D6 100%);"> 📋 เลือกหัวข้อใหม่ </button>
       </div>
      </div>
     </div>
@@ -258,16 +250,16 @@
     ];
 
     const shopItems = [
-      { name: 'ขนมปัง', emoji: '🍞', priceRange: [15, 35] },
-      { name: 'นม', emoji: '🥛', priceRange: [12, 25] },
-      { name: 'ไข่ 1 แผง', emoji: '🥚', priceRange: [50, 80] },
-      { name: 'แอปเปิ้ล', emoji: '🍎', priceRange: [20, 40] },
-      { name: 'ข้าวกล่อง', emoji: '🍱', priceRange: [35, 60] },
-      { name: 'น้ำผลไม้', emoji: '🧃', priceRange: [15, 30] },
-      { name: 'ขนมถุง', emoji: '🍪', priceRange: [10, 25] },
-      { name: 'ไอศกรีม', emoji: '🍦', priceRange: [20, 45] },
-      { name: 'ปากกา', emoji: '🖊️', priceRange: [10, 30] },
-      { name: 'สมุด', emoji: '📓', priceRange: [15, 40] }
+      { name: 'ขนมปัง', emoji: '🍞', small: '🥐', priceRange: [15, 35] },
+      { name: 'นม', emoji: '🥛', small: '🍶', priceRange: [12, 25] },
+      { name: 'ไข่ 1 แผง', emoji: '🥚', small: '🐔', priceRange: [50, 80] },
+      { name: 'ก๋วยเตี๋ยว', emoji: '🍜', small: '🍲', priceRange: [30, 50] },
+      { name: 'ข้าว', emoji: '🍚', small: '🍱', priceRange: [35, 60] },
+      { name: 'น้ำผลไม้', emoji: '🧃', small: '🥤', priceRange: [15, 30] },
+      { name: 'ขนมถุง', emoji: '🍪', small: '🍩', priceRange: [10, 25] },
+      { name: 'ไอศกรีม', emoji: '🍦', small: '🍨', priceRange: [20, 45] },
+      { name: 'แอปเปิ้ล', emoji: '🍎', small: '🥗', priceRange: [20, 40] },
+      { name: 'ห่อแซนด์วิช', emoji: '🥪', small: '🍖', priceRange: [40, 70] }
     ];
 
     // Initialize SDK
@@ -323,8 +315,17 @@
     function createCoinElement(coin, count) {
       const div = document.createElement('div');
       div.className = 'flex flex-col items-center';
+      const colors = {
+        10: '#C0C0C0',
+        5: '#C0C0C0',
+        2: '#CD7F32',
+        1: '#CD7F32',
+        0.5: '#CD7F32',
+        0.25: '#CD7F32'
+      };
+      const bgColor = colors[coin.value] || '#C0C0C0';
       div.innerHTML = `
-        <div class="coin-gold w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg">
+        <div class="coin-gold w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-2xl border-4 border-yellow-200" style="background: radial-gradient(circle at 35% 35%, ${bgColor}, ${bgColor}cc); box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset -2px -2px 5px rgba(0,0,0,0.2), inset 2px 2px 5px rgba(255,255,255,0.5);">
           ${coin.value >= 1 ? coin.value : (coin.value * 100)}
         </div>
         <span class="text-xs text-gray-600 mt-1 font-medium">x${count}</span>
@@ -335,9 +336,17 @@
     function createBillElement(bill, count) {
       const div = document.createElement('div');
       div.className = 'flex flex-col items-center';
+      const colors = {
+        1000: 'linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #8B4513 100%)',
+        500: 'linear-gradient(135deg, #800080 0%, #9400D3 50%, #800080 100%)',
+        100: 'linear-gradient(135deg, #DC143C 0%, #FF1493 50%, #DC143C 100%)',
+        50: 'linear-gradient(135deg, #4169E1 0%, #6495ED 50%, #4169E1 100%)',
+        20: 'linear-gradient(135deg, #228B22 0%, #32CD32 50%, #228B22 100%)'
+      };
+      const bgGradient = colors[bill.value] || colors[100];
       div.innerHTML = `
-        <div class="bill-gradient w-16 h-10 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-lg">
-          ${bill.value}
+        <div class="bill-gradient w-20 h-12 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-2xl border-2 border-yellow-100" style="background: ${bgGradient}; box-shadow: 0 6px 15px rgba(0,0,0,0.3), inset 1px 1px 3px rgba(255,255,255,0.3);">
+          <span style="font-size: 1.2em; letter-spacing: 1px;">${bill.value}</span>
         </div>
         <span class="text-xs text-gray-600 mt-1 font-medium">x${count}</span>
       `;
@@ -392,11 +401,11 @@
       const change = paid - price;
 
       moneyDisplay.innerHTML = `
-        <div class="flex items-center gap-4 bg-pink-100 rounded-2xl p-4 w-full justify-center border-2 border-pink-200">
-          <span class="text-5xl">${item.emoji}</span>
+        <div class="flex items-center gap-4 bg-pink-100 rounded-2xl p-4 w-full justify-center border-2 border-pink-200 transform hover:scale-105 transition-transform">
+          <span class="text-6xl animate-bounce">${item.emoji}</span>
           <div class="text-left">
             <div class="font-bold text-lg text-gray-800">${item.name}</div>
-            <div class="font-bold text-xl" style="color: #FF1493;">${price} บาท</div>
+            <div class="font-bold text-2xl" style="color: #FF1493;">฿ ${price}</div>
           </div>
         </div>
       `;
@@ -404,7 +413,7 @@
       correctAnswer = change;
 
       return {
-        text: `🛒 ซื้อ${item.name}ราคา ${price} บาท จ่ายเงิน ${paid} บาท จะได้เงินทอนเท่าไร?`,
+        text: `🛒 ซื้อ${item.emoji}${item.name}ราคา ${price} บาท จ่าย ${paid} บาท จะได้เงินทอนเท่าไร?`,
         answer: change,
         type: 'multiple'
       };
@@ -423,10 +432,10 @@
         const price = randomInt(item.priceRange[0], item.priceRange[1]);
         total += price;
         return `
-          <div class="flex flex-col items-center bg-rose-100 rounded-xl p-3 border border-pink-300">
-            <span class="text-3xl mb-1">${item.emoji}</span>
-            <span class="text-sm text-gray-700">${item.name}</span>
-            <span class="font-bold" style="color: #FF1493;">${price} บาท</span>
+          <div class="flex flex-col items-center bg-rose-100 rounded-xl p-3 border border-pink-300 hover:scale-110 transition-transform">
+            <span class="text-5xl mb-1">${item.emoji}</span>
+            <span class="text-sm text-gray-700 font-semibold">${item.name}</span>
+            <span class="font-bold text-lg" style="color: #FF1493;">฿${price}</span>
           </div>
         `;
       }).join('');
@@ -448,17 +457,17 @@
 
       const scenarios = [
         {
-          text: (budget, spent) => `📊 มีเงินค่าขนม ${budget} บาทต่อสัปดาห์ ใช้ไปแล้ว ${spent} บาท เหลือเงินเท่าไร?`,
+          text: (budget, spent) => `📊 มีเงินค่าขนม ${budget} บาท/สัปดาห์ ใช้ไปแล้ว ${spent} บาท 🍞 เหลือเงินเท่าไร?`,
           budget: () => randomInt(100, 300),
           spent: (b) => randomInt(Math.floor(b * 0.3), Math.floor(b * 0.7))
         },
         {
-          text: (target, saved) => `🎯 ต้องการเก็บเงิน ${target} บาท เก็บได้แล้ว ${saved} บาท ต้องเก็บเพิ่มอีกเท่าไร?`,
+          text: (target, saved) => `🎯 ต้องการเก็บเงิน ${target} บาท เก็บได้แล้ว ${saved} บาท 💰 ต้องเก็บเพิ่มอีกเท่าไร?`,
           budget: () => randomInt(200, 500),
           spent: (b) => randomInt(Math.floor(b * 0.2), Math.floor(b * 0.6))
         },
         {
-          text: (daily, days) => `💵 ได้ค่าขนมวันละ ${daily} บาท ใน ${days} วัน จะมีเงินรวมเท่าไร?`,
+          text: (daily, days) => `💵 ได้ค่าขนมวันละ ${daily} บาท 🍜 ใน ${days} วัน จะมีเงินรวมเท่าไร?`,
           budget: () => randomInt(20, 50),
           spent: () => randomInt(5, 7),
           calc: 'multiply'
@@ -478,8 +487,8 @@
 
       const emoji = scenario.calc === 'multiply' ? '📅' : '💰';
       moneyDisplay.innerHTML = `
-        <div class="text-center p-4 bg-rose-100 rounded-2xl w-full border-2 border-pink-200">
-          <span class="text-5xl">${emoji}</span>
+        <div class="text-center p-6 bg-rose-100 rounded-2xl w-full border-2 border-pink-200 animate-bounce">
+          <span class="text-6xl">${emoji}</span>
         </div>
       `;
 
@@ -690,5 +699,5 @@
     // Initialize
     updateUI();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a04b822328693437',t:'MTc4MDI4ODQ5Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a04be63cda86ce4f',t:'MTc4MDI5MjU5Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
